@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 
 using HtmlAgilityPack;
 
+using Model;
+
 namespace Grabber
 {
     public class PageGrabber
@@ -52,10 +54,10 @@ namespace Grabber
             foreach (var container in weatherContainers)
             {
                 string time = container.SelectSingleNode(".//div[@class='table__time_hours']").InnerText.Trim() ?? string.Empty;
-                string temp = container.SelectSingleNode(".//div[@class='table__temp']").InnerText.Trim() ?? string.Empty;
+                string temp = container.SelectSingleNode(".//div[@class='table__temp']").InnerText.Trim().Replace("&deg;", "°") ?? string.Empty;
                 string pressure = container.SelectSingleNode(".//div[@class='table__pressure']").InnerText.Trim() ?? string.Empty;
                 string humidity = container.SelectSingleNode(".//div[@class='table__humidity']").InnerText.Trim() ?? string.Empty;
-                string windSpeed = container.SelectSingleNode(".//div[@data-tooltip='']").InnerText.Trim() ?? string.Empty;
+                string windSpeed = container.SelectSingleNode(".//div[@data-tooltip='']/label[@class='show-tooltip']").InnerText.Trim().Replace("\n\n", " ") ?? string.Empty;
                 string precipitation = container.SelectSingleNode(".//div[@class='table__precipitation']").InnerText.Trim() ?? string.Empty;
 
                 record.Add(new WeatherRecord

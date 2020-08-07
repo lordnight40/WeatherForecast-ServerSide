@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerSide", "ServerSide\ServerSide.csproj", "{B04503F7-22FB-4DDA-8AC4-062593E418CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grabber", "Grabber\Grabber.csproj", "{1CBC6B7B-9C89-4E65-855D-0E16AD4FBCC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grabber", "Grabber\Grabber.csproj", "{1CBC6B7B-9C89-4E65-855D-0E16AD4FBCC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{9F040E73-5FA9-4F19-B5DF-92068969EC6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1CBC6B7B-9C89-4E65-855D-0E16AD4FBCC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CBC6B7B-9C89-4E65-855D-0E16AD4FBCC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CBC6B7B-9C89-4E65-855D-0E16AD4FBCC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F040E73-5FA9-4F19-B5DF-92068969EC6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F040E73-5FA9-4F19-B5DF-92068969EC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F040E73-5FA9-4F19-B5DF-92068969EC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F040E73-5FA9-4F19-B5DF-92068969EC6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
